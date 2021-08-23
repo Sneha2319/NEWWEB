@@ -1,0 +1,49 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient">New User <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+        </div>
+        <main id="site-main">
+            <div class="container">
+                <div class="box-nav d-flex justify-between">
+                    <a href="/search-user" class="border-shadow">
+                        <span class="text-gradient">search patient <i class="fas fa-user"></i></span>
+                    </a>
+                </div>
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>SR NO.</th>
+                            <th> Patient Name</th>
+                            <th> Main Complaint</th>
+                            <th> Past History</th>
+                            <th>Bp</th>
+                            <th> Pulse Rate</th>
+                            <th>LMP Test</th>
+                            <th>Investigation</th>
+                            <th>Treatment Given</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
